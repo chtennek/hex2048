@@ -1,0 +1,17 @@
+doctype html
+html(ng-app='Hex2048App')
+  head
+    title= title
+    link(rel='stylesheet', href='/angular-hotkeys/build/hotkeys.css')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/jquery/jquery.js')
+    script(src='/angular/angular.js')
+    script(src='/angular-route/angular-route.js')
+    script(src='/angular-resource/angular-resource.js')
+    script(src='/angular-animate/angular-animate.js')
+    script(src='/angular-hotkeys/build/hotkeys.js')
+
+  body(ng-controller='RootCtrl')
+    block scripts
+    block content

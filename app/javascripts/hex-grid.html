@@ -1,0 +1,19 @@
+<svg class='viewport'
+    ng-attr-width='{{ width }}'
+    ng-attr-height='{{ height }}'
+    viewBox='-3 -3 6 6'
+>
+    <g transform='rotate(90)'>
+        <g
+            ng-repeat='pos in ngModel.locations'
+            hex-tile
+            position='pos'
+        ></g>
+        <g
+            ng-repeat='(coord, tile) in ngModel.tiles'
+            hex-tile
+            position='tile.pos'
+            value='{{ tile.val }}'
+        ></g>
+    </g>
+</svg>

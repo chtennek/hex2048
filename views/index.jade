@@ -1,0 +1,17 @@
+extends layout
+
+block scripts
+  script(src='javascripts/main.js')
+  script(src='javascripts/HexGrid.js')
+  script(src='javascripts/Hex2048Game.js')
+
+block content
+  div(
+    id='game'
+    ng-controller='Hex2048Ctrl'
+    hex-grid
+    ng-model='game.grid'
+    game='game'
+    width='640'
+    height='640'
+  )
