@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "postinstall": "bower install",
-    "start": "coffee app.coffee",
+    "start": "./node_modules/coffee-script/bin/coffee app.coffee",
     "test": "karma start karma.conf.js",
     "update-webdriver": "webdriver-manager update",
     "protractor": "protractor protractor-conf.js",
@@ -27,6 +27,6 @@
     "karma-chai": "^0.1.0",
     "sinon": "^1.9.1",
     "karma-sinon": "^1.0.3",
-    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-coffee-preprocessor": "^0.2.1"
   }
 }
